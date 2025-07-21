@@ -16,53 +16,46 @@ import {
 
 const faqData = [
   {
-    id: "what-is-telegram",
-    question: "What is Telegram?",
+    id: "what-is-outline",
+    question: "Что такое Outline VPN?",
     answer:
-      "Telegram is a cloud-based instant messaging app that focuses on speed, security, and privacy. It allows you to send messages, photos, videos, and files of any type, as well as create groups for up to 200,000 members or channels for broadcasting to unlimited audiences.",
-    icon: MessageCircle,
-  },
-  {
-    id: "is-telegram-free",
-    question: "Is Telegram free to use?",
-    answer:
-      "Yes, Telegram is completely free to use. There are no subscription fees, no ads, and no premium features that require payment. The service is funded by its founder and remains committed to staying free for all users.",
-    icon: Users,
-  },
-  {
-    id: "how-secure",
-    question: "How secure is Telegram?",
-    answer:
-      "Telegram uses advanced encryption protocols. All chats are encrypted, and Secret Chats use end-to-end encryption with additional security features like self-destructing messages. Your data is stored across multiple data centers around the globe.",
+      "Outline — это безопасный VPN-сервис с открытым исходным кодом, созданный для обхода блокировок и защиты вашей конфиденциальности в интернете. Вы можете использовать его на компьютере и телефоне.",
     icon: Shield,
   },
   {
-    id: "group-limits",
-    question: "What are the group and channel limits?",
+    id: "how-to-connect",
+    question: "Как подключиться к Outline по ключу?",
     answer:
-      "Telegram groups can have up to 200,000 members, while channels can have unlimited subscribers. You can also create supergroups with advanced admin tools, pinned messages, and public links for easy joining.",
-    icon: Users,
-  },
-  {
-    id: "file-sharing",
-    question: "What files can I share on Telegram?",
-    answer:
-      "You can share files of any type up to 2GB each. This includes documents, videos, audio files, photos, and more. There's no limit on the number of files you can send, and they're stored in the cloud for easy access.",
-    icon: Settings,
-  },
-  {
-    id: "multiple-devices",
-    question: "Can I use Telegram on multiple devices?",
-    answer:
-      "Yes! Telegram syncs seamlessly across all your devices. You can use it on your phone, tablet, computer, and web browser simultaneously. All your chats and media are instantly available everywhere.",
+      "1. Скачайте приложение Outline для Android, iOS, Windows или macOS.\n2. Откройте ссылку подключения, которую вы получили от бота.\n3. Подтвердите подключение — VPN будет активирован автоматически.",
     icon: Smartphone,
   },
   {
-    id: "global-availability",
-    question: "Is Telegram available worldwide?",
+    id: "where-to-download",
+    question: "Где скачать приложение Outline?",
     answer:
-      "Telegram is available in most countries around the world. The app supports over 100 languages and works reliably even in areas with poor internet connectivity thanks to its optimized protocols.",
+      "Вы можете скачать приложение с официального сайта [getoutline.org](https://getoutline.org/ru/), либо из App Store или Google Play, набрав 'Outline VPN'.",
     icon: Globe,
+  },
+  {
+    id: "multiple-devices",
+    question: "Можно ли использовать ключ на нескольких устройствах?",
+    answer:
+      "Обычно ключ рассчитан только на одно устройство. Если вы подключите его на другом, старое подключение может быть отключено.",
+    icon: Users,
+  },
+  {
+    id: "how-safe",
+    question: "Насколько безопасен Outline VPN?",
+    answer:
+      "Outline использует современные протоколы шифрования. Ваши данные защищены и недоступны третьим лицам, включая интернет-провайдеров.",
+    icon: Shield,
+  },
+  {
+    id: "connection-problems",
+    question: "Что делать, если VPN не подключается?",
+    answer:
+      "1. Убедитесь, что ключ активен.\n2. Попробуйте перезапустить приложение.\n3. Проверьте интернет-соединение.\nЕсли проблема не решается — напишите в поддержку бота.",
+    icon: Settings,
   },
 ];
 
@@ -75,11 +68,12 @@ export const FAQ = () => {
           <MessageCircle className="w-8 h-8 text-white" />
         </div>
         <h1 className="text-3xl font-bold text-white">
-          Frequently Asked Questions
+          Часто задаваемые вопросы
         </h1>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          Find answers to common questions about Telegram. If you can't find
-          what you're looking for, feel free to contact our support team.
+          Найдите ответы на распространенные вопросы о Telegram. Если вы не
+          можете найти если вы ищете то, что вам нужно, не стесняйтесь
+          обращаться в нашу службу поддержки.
         </p>
       </div>
 
